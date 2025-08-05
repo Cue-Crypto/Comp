@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Shorts Generator</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- 🔻 Google AdSense (Replace this with your real AdSense code) -->
+  <!--
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXX"
+     crossorigin="anonymous"></script>
+  -->
+
+</head>
+<body>
+
+  <header>
+    <h1>🎮 AI Shorts Generator</h1>
+    <p>Create Minecraft-style videos with AI-powered stories!</p>
+  </header>
+
+  <!-- Ad slot -->
+  <div class="ad-slot">
+    <!-- Example: Place your ad code here -->
+    <p>[Your Ad Here]</p>
+  </div>
+
+  <main>
+    <form id="videoForm">
+      <label for="background">Choose Background:</label>
+      <select id="background" required>
+        <option value="minecraft">Minecraft Parkour</option>
+        <option value="green">Green Screen</option>
+      </select>
+
+      <label for="storyType">Choose Story Type:</label>
+      <select id="storyType" required>
+        <option value="scary">Scary</option>
+        <option value="exciting">Exciting</option>
+        <option value="funny">Funny</option>
+        <option value="sad">Sad</option>
+      </select>
+
+      <button type="submit">Generate Video</button>
+    </form>
+
+    <div id="loading" class="hidden">
+      <p>🌀 Generating your video... please wait.</p>
+    </div>
+
+    <div id="result" class="hidden">
+      <h2>Your AI Video</h2>
+      <video controls width="300" height="530">
+        <source src="demo-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <br>
+      <a href="demo-video.mp4" download class="btn">⬇ Download Video</a>
+
+      <h3>Description:</h3>
+      <p id="description">
+        This is a thrilling AI-generated story set over Minecraft parkour. Watch till the end for a twist!
+      </p>
+
+      <h3>Tags:</h3>
+      <p id="tags">
+        #minecraft #scary #shorts #ai #story #viral #gaming
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AI Shorts Generator</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
